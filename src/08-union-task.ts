@@ -14,15 +14,9 @@ const yiman: Developer = {
 
 
 
-function gradeDeveloper(obj: { level: Level }): {} {
-    if (obj.level === 'junior')
-        obj.level = 'middle'
-    else {
-        obj.level = 'senior'
-    }
-    return obj
+function gradeDeveloper(obj: { level: Level }, newsLevel: Level): void {
+    obj.level = newsLevel
 }
 
 
-console.log(gradeDeveloper(yiman));
-console.log(yiman);
+gradeDeveloper(yiman, 'middle')

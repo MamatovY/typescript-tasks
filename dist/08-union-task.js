@@ -4,13 +4,7 @@ const yiman = {
     skills: ['React', 'Redux', 'Next', 'TS'],
     level: 'junior'
 };
-function gradeDeveloper(obj) {
-    if (obj.level === 'junior')
-        obj.level = 'middle';
-    else {
-        obj.level = 'senior';
-    }
-    return obj;
+function gradeDeveloper(obj, newsLevel) {
+    obj.level = newsLevel;
 }
-console.log(gradeDeveloper(yiman));
-console.log(yiman);
+gradeDeveloper(yiman, 'middle');
