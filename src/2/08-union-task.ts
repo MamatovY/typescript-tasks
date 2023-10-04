@@ -6,7 +6,7 @@ interface Developer {
     level: Level
 }
 
-const yiman: Developer = {
+export const yiman: Developer = {
     login: 'MamatovY',
     skills: ['React', 'Redux', 'Next', 'TS'],
     level: 'junior'
