@@ -17,3 +17,13 @@ function example2(strs: string | string[] | null) {
         strs.toLowerCase()
     }
 }
+
+
+function example3(x: number[] | Date) {
+    //Проверяем на тип Date
+    if (x instanceof Date) {
+        x.getMonth()
+    } else {
+        x.concat([])
+    }
+}
