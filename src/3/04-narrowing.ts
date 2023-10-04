@@ -27,3 +27,7 @@ function example3(x: number[] | Date) {
         x.concat([])
     }
 }
+
+type Fish = { swim: () => void }
+type Bird = { fly: () => void }
+
