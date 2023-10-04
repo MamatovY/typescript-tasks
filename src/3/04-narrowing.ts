@@ -9,3 +9,11 @@ function example1(x?: number | string) {
         x //never
     }
 }
+
+function example2(strs: string | string[] | null) {
+    if (strs && typeof strs === 'object') {
+        strs.concat([])
+    } else if (typeof strs === 'string') {
+        strs.toLowerCase()
+    }
+}
