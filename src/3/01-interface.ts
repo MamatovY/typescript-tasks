@@ -1,4 +1,3 @@
-
 interface User {
     readonly email: string,
     readonly login: string,
