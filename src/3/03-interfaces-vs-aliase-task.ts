@@ -30,8 +30,8 @@ type Vehicle = {
     brand: string
 }
 
-type Cars = {
+type Cars = Vehicle & Product & {
     type: string,
     model: string
-} & Vehicle & Product
+}
 
