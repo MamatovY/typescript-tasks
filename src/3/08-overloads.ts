@@ -17,3 +17,5 @@ function asyncSum(a: number, b: number, cb?: asyncCb): any {
 
     return Promise.resolve(result)
 }
+
+asyncSum(1, 2)
