@@ -33,3 +33,5 @@ type Developer = {
     code?: (arg: string) => string
 } & Employee
 
+
+export { }
