@@ -7,4 +7,4 @@ function head(value: any): any {
     return value[0]
 }
 
-const x = head([0, 3, 5])
+const x = head([true, false, true])
