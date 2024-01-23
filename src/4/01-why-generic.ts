@@ -1,8 +1,5 @@
 function head(value: string): string
-function head(value: number[]): number
-function head(value: string[]): string
-function head(value: boolean[]): boolean
-function head(value: Date[]): Date
+function head<T>(value: T[]): T
 function head(value: any): any {
     return value[0]
 }
